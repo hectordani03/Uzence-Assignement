@@ -1,11 +1,11 @@
 # Uzence Design System – Front-End Assignment
 
-This project is a **mini design system** built with **React, TypeScript, TailwindCSS, Storybook and Vitest** as part of the Front-End Internship assignment for **Uzence Design Studio**.  
+ This project is a **mini design system** built with **React, TypeScript, TailwindCSS, Storybook and Vitest** as part of the Front-End Internship assignment for **Uzence Design Studio**.  
 It demonstrates reusable, accessible, and responsive UI components documented in Storybook.
----
+
 ---
 
-## Demo
+## ▶️ Demo
 
 - **Complete Storybook Demo:** [Complete Demo](https://68a69abeb4a85a6bcb93aef6-cqootrftzs.chromatic.com/?path=/story/data-display-datatable--basic)
 - **Storybook DataTable:** [DataTable Demo](https://www.chromatic.com/component?appId=68a69abeb4a85a6bcb93aef6&csfId=data-display-datatable&buildNumber=3&k=68a6b171a0412fa8aec39124-1200px-interactive-true&h=32&b=-1)
