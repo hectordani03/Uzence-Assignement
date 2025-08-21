@@ -1,69 +1,151 @@
-# React + TypeScript + Vite
+# Uzence Design System – Front-End Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a **mini design system** built with **React, TypeScript, TailwindCSS, Storybook and Vitest** as part of the Front-End Internship assignment for **Uzence Design Studio**.  
+It demonstrates reusable, accessible, and responsive UI components documented in Storybook.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+- **React** with **Vite** for fast development.
+- **TypeScript** for type safety.
+- **TailwindCSS (@tailwindcss/vite)** for utility-first styling.
+- **Storybook** for interactive component documentation.
+- **Vitest + Testing Library** for unit/integration tests.
+- **ESLint + Prettier** for code quality and consistency.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## ⚙️ Setup Instructions
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+Clone and install dependencies:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone https://github.com/your-username/uzence-design-system.git
+cd uzence-design-system
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Run the project locally:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev        # start Vite app demo
+npm run storybook  # start Storybook (http://localhost:6006)
+npm run test       # run test suite
 ```
+
+Build production bundles:
+
+```bash
+npm run build      # build Vite app
+npm run build-storybook # build Storybook (storybook-static/)
+```
+
+---
+
+## 🎨 Components
+
+### 1. InputField
+
+A flexible and accessible input component with:
+
+- **Variants**: `outlined`, `filled`, `ghost`.
+- **Sizes**: `sm`, `md`, `lg`.
+- **States**: **normal**, **invalid**, **loading**, **disabled**.
+- **Features**: clearable input, password toggle, helper & error text.
+- **Accessibility**: `aria-invalid`, `aria-describedby`, keyboard-friendly focus.
+
+📸 Example:
+![Basic Input](assets/gifs/basic-input.gif)
+![Password Input](assets/gifs/password-input.gif)
+![Invalid Input](assets/images/invalid-input.png)
+![Loading Input](assets/gifs/input-loading.gif)
+
+
+
+### 2. DataTable
+
+A responsive table component supporting:
+
+- **Column sorting** (`aria-sort` enabled).
+- **Row selection** (single or multiple).
+- **Loading state** with spinner.
+- **Empty state** with customizable message.
+- **Stable row keys** via `rowKey` prop.
+- **Accessibility**: semantic `<table>`, focusable headers, keyboard-friendly checkboxes/radios.
+
+📸 Example:
+![Basic DataTable](assets/images/datatable-basic.png)
+![Sortable DataTable](assets/gifs/sortable-datatable.gif)
+![Loading DataTable](assets/gifs/loading-datatable.gif)
+![Empty DataTable](assets/images/empty-datatable.png)
+![Selectable DataTable](assets/gifs/selectable-datatable.gif)
+![Selectable Single DataTable](assets/gifs/selectable-single.gif)
+---
+
+## 🌗 Light & Dark Mode
+
+The design system supports both themes. In Storybook you can toggle **Light/Dark** from the toolbar.
+
+📸 Example:
+![Light Mode](assets/images/light-mode.png)
+![Dark Mode](assets/images/dark-mode.png)
+---
+
+## 🧪 Testing
+
+Unit tests are written with **Vitest + Testing Library**.
+
+- **InputField**: label rendering, helper/error messages, clear button functionality.
+- **DataTable**: column sorting, row selection (single/multiple).
+
+Run tests:
+
+```bash
+npm run test
+```
+
+---
+
+## 📖 Approach & Decisions
+
+1. **Atomic Design Principles** – components are designed to be **small, reusable, and composable**.
+2. **Variants with `cva` (Class Variance Authority)** – to scale size/variant/state logic in a type-safe way.
+3. **Accessibility First** – proper ARIA roles, `aria-sort`, `aria-invalid`, focus states, and Storybook A11y checks.
+4. **Theming** – Dark/Light mode handled via Tailwind's `dark:` variant and a global Storybook toggle.
+5. **Documentation** – Storybook stories show usage, controls, and states to make adoption easy across teams.
+6. **Testing** – Unit tests validate interactivity (sorting, clearing, error handling).
+7. **Scalability** – Components were built with extension in mind (e.g. `rowKey`, `selectionMode` for DataTable).
+
+---
+
+## 📸 Storybook Demo
+
+You can view the full interactive documentation in Storybook:
+
+```bash
+npm run storybook
+```
+
+Or deploy it (recommended):
+
+- **Chromatic** → `npx chromatic --project-token=YOUR_TOKEN`
+- **Vercel** → build Storybook (`storybook-static/`) and deploy.
+
+---
+
+## ✅ Deliverables
+
+- ✅ **InputField** component (variants, sizes, states, clearable, password toggle).
+- ✅ **DataTable** component (sorting, selection, loading, empty state).
+- ✅ TypeScript support.
+- ✅ Responsive & Accessible.
+- ✅ Storybook documentation with Light/Dark toggle.
+- ✅ Unit tests with Vitest + RTL.
+- ✅ README with setup & approach.
+
+---
+
+## 👤 Author
+
+Developed by **Héctor Martínez** as part of the Uzence Design Studio Front-End Internship Assignment.
