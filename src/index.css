@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :focus-visible {
+    outline: 2px solid transparent;
+    box-shadow: 0 0 0 3px rgba(59,130,246,0.6);
+    border-radius: 0.5rem;
+  }
+}
+
+/* --- Background for light mode mode ---  */
+html,
+body {
+  height: 100%;
+  background: #ffffff;       
+  color: #111827;             
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* ----- Background for dark mode ----- */
+.dark html,
+.dark body {
+  background: radial-gradient( ellipse 80% 80% at 50% -20%, rgba(120,119,198,0.3), rgba(255,255,255,0) ), #030712;
+  background-repeat: no-repeat;
+  color: white;
+}
