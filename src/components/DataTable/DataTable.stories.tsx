@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { useState } from 'react'
-import { DataTable, type DataTableProps } from './DataTable'
+import { DataTable } from './DataTable'
 
 type User = { id: number; name: string; email: string; age: number }
 
@@ -14,7 +14,7 @@ const columns = [
   { key: 'name', title: 'Name', dataIndex: 'name', sortable: true },
   { key: 'email', title: 'Email', dataIndex: 'email' },
   { key: 'age', title: 'Age', dataIndex: 'age', sortable: true },
-] as const
+]
 
 // --- Storybook meta configuration ---
 const meta: Meta<typeof DataTable<User>> = {

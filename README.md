@@ -2,6 +2,13 @@
 
 This project is a **mini design system** built with **React, TypeScript, TailwindCSS, Storybook and Vitest** as part of the Front-End Internship assignment for **Uzence Design Studio**.  
 It demonstrates reusable, accessible, and responsive UI components documented in Storybook.
+---
+
+## Demo
+
+- **Complete Storybook Demo:** [Input Demo](https://68a69abeb4a85a6bcb93aef6-cqootrftzs.chromatic.com/?path=/story/data-display-datatable--basic)
+- **Storybook DataTable:** [DataTable Demo](https://www.chromatic.com/component?appId=68a69abeb4a85a6bcb93aef6&csfId=data-display-datatable&buildNumber=3&k=68a6b171a0412fa8aec39124-1200px-interactive-true&h=32&b=-1)
+- **Storybook Input:** [Input Demo](https://www.chromatic.com/component?appId=68a69abeb4a85a6bcb93aef6&csfId=form-inputfield--with-error&buildNumber=3&k=68a6b171a0412fa8aec3912c-1200px-interactive-true&h=36&b=-3)
 
 ---
 
@@ -56,9 +63,13 @@ A flexible and accessible input component with:
 - **Accessibility**: `aria-invalid`, `aria-describedby`, keyboard-friendly focus.
 
 📸 Example:
+
 ![Basic Input](src/assets/gifs/basic-input.gif)
+
 ![Password Input](src/assets/gifs/password-input.gif)
+
 ![Invalid Input](src/assets/images/invalid-input.png)
+
 ![Loading Input](src/assets/gifs/input-loading.gif)
 
 
@@ -75,11 +86,17 @@ A responsive table component supporting:
 - **Accessibility**: semantic `<table>`, focusable headers, keyboard-friendly checkboxes/radios.
 
 📸 Example:
+
 ![Basic DataTable](src/assets/images/datatable-basic.png)
+
 ![Sortable DataTable](src/assets/gifs/sortable-datatable.gif)
+
 ![Loading DataTable](src/assets/gifs/loading-datatable.gif)
+
 ![Empty DataTable](src/assets/images/empty-datatable.png)
+
 ![Selectable DataTable](src/assets/gifs/selectable-datatable.gif)
+
 ![Selectable Single DataTable](src/assets/gifs/selectable-single.gif)
 ---
 
@@ -88,7 +105,9 @@ A responsive table component supporting:
 The design system supports both themes. In Storybook you can toggle **Light/Dark** from the toolbar.
 
 📸 Example:
+
 ![Light Mode](src/assets/images/light-mode.png)
+
 ![Dark Mode](src/assets/images/dark-mode.png)
 ---
 

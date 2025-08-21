@@ -1,4 +1,5 @@
-import { forwardRef, InputHTMLAttributes, useId, useMemo, useState } from 'react'
+import { forwardRef, useId, useMemo, useState } from 'react'
+import type { InputHTMLAttributes } from 'react'
 import { cva, type VariantProps } from 'class-variance-authority'
 import { cn } from '../../lib/cn'
 
