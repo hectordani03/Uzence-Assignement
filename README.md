@@ -147,11 +147,6 @@ You can view the full interactive documentation in Storybook:
 npm run storybook
 ```
 
-Or deploy it (recommended):
-
-- **Chromatic** → `npx chromatic --project-token=YOUR_TOKEN`
-- **Vercel** → build Storybook (`storybook-static/`) and deploy.
-
 ---
 
 ## ✅ Deliverables
