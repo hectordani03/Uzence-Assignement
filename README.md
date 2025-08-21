@@ -1,7 +1,7 @@
 # Uzence Design System – Front-End Assignment
 
- This project is a **mini design system** built with **React, TypeScript, TailwindCSS, Storybook and Vitest** as part of the Front-End Internship assignment for **Uzence Design Studio**.  
-It demonstrates reusable, accessible, and responsive UI components documented in Storybook.
+#### This project is a **mini design system** built with **React, TypeScript, TailwindCSS, Storybook and Vitest** as part of the Front-End Internship assignment for **Uzence Design Studio**.  
+#### It demonstrates reusable, accessible, and responsive UI components documented in Storybook.
 
 ---
 
