@@ -56,10 +56,10 @@ A flexible and accessible input component with:
 - **Accessibility**: `aria-invalid`, `aria-describedby`, keyboard-friendly focus.
 
 📸 Example:
-![Basic Input](assets/gifs/basic-input.gif)
-![Password Input](assets/gifs/password-input.gif)
-![Invalid Input](assets/images/invalid-input.png)
-![Loading Input](assets/gifs/input-loading.gif)
+![Basic Input](src/assets/gifs/basic-input.gif)
+![Password Input](src/assets/gifs/password-input.gif)
+![Invalid Input](src/assets/images/invalid-input.png)
+![Loading Input](src/assets/gifs/input-loading.gif)
 
 
 
@@ -75,12 +75,12 @@ A responsive table component supporting:
 - **Accessibility**: semantic `<table>`, focusable headers, keyboard-friendly checkboxes/radios.
 
 📸 Example:
-![Basic DataTable](assets/images/datatable-basic.png)
-![Sortable DataTable](assets/gifs/sortable-datatable.gif)
-![Loading DataTable](assets/gifs/loading-datatable.gif)
-![Empty DataTable](assets/images/empty-datatable.png)
-![Selectable DataTable](assets/gifs/selectable-datatable.gif)
-![Selectable Single DataTable](assets/gifs/selectable-single.gif)
+![Basic DataTable](src/assets/images/datatable-basic.png)
+![Sortable DataTable](src/assets/gifs/sortable-datatable.gif)
+![Loading DataTable](src/assets/gifs/loading-datatable.gif)
+![Empty DataTable](src/assets/images/empty-datatable.png)
+![Selectable DataTable](src/assets/gifs/selectable-datatable.gif)
+![Selectable Single DataTable](src/assets/gifs/selectable-single.gif)
 ---
 
 ## 🌗 Light & Dark Mode
@@ -88,8 +88,8 @@ A responsive table component supporting:
 The design system supports both themes. In Storybook you can toggle **Light/Dark** from the toolbar.
 
 📸 Example:
-![Light Mode](assets/images/light-mode.png)
-![Dark Mode](assets/images/dark-mode.png)
+![Light Mode](src/assets/images/light-mode.png)
+![Dark Mode](src/assets/images/dark-mode.png)
 ---
 
 ## 🧪 Testing
