@@ -27,7 +27,7 @@ type Story = StoryObj<typeof InputField>
 
 // --- Default examples ---
 export const States: Story = {
-  args: { label: 'Username', placeholder: 'jdoe', loading: false, invalid: false }
+  args: { label: 'Username', placeholder: 'hector', loading: false, invalid: false }
 }
 
 export const Password: Story = {
